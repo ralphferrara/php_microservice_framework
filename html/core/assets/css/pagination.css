@@ -1,0 +1,114 @@
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//|| Core3 :: Copyright Syhora 2016
+//|| pagination.css
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        /* ||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-||
+        || General
+        ||-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-|| */
+
+        span.pagination.empty {
+                color : #CCC;
+                font-size : 12px;
+        }
+
+        div.pagination {
+                display   : block;
+        }
+
+        div.pagination span {
+                color      : #999;
+                padding    : 4px 0 0 0px;
+                font-size  : 90%;
+                float      : left;
+        }
+
+        div.pagination ul.pagination {
+                margin     :  0 0;
+                float      : right;
+                list-style : none;
+        }
+
+        .pagination > li {
+                display         : inline-block;
+                vertical-align  : middle;
+                text-align      : center;
+        }
+
+        div.pagination span select.perpage {
+                display : none;
+                padding : 3px 3px;
+        }
+
+        div.pagination.header {
+                display         : none;
+                float           : right;
+                border-top      : 0;
+        }
+
+        .pagination > li > a {
+                padding     : 5px 7px;
+        }
+
+        .pagination > li > a.current {
+                font-weight : bold;
+                color       : #000;
+                background  : #EAEAEA;
+        }
+
+        .pagination li.next,
+        .pagination li.prev {
+                margin-left     : 10px;
+                margin-right    : 10px;
+        }
+
+        .pagination > li > a.current:hover {
+                color       : #000;
+                cursor      : default;
+        }
+
+        .pagination > li > a > i.fa {
+                padding         : 3px 0;
+                display         : block;
+        }
+
+        div.pagination.header ul li select {
+                font-size       : 16px;
+                display         : inline-block;
+                float           : left;
+                padding         : 5px 6px 3px;
+                border-left     : 0px solid transparent;
+                border-right    : 0px solid transparent;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Mobile Layout
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        @media (max-width: 767px) {
+
+                div.pagination {
+                        text-align : center;
+                        border-radius    : 0;
+                        border-top       : 1px solid #EAEAEA;
+                        padding          : 5px 0 0 0;
+                }
+
+                div.pagination > span {
+                        display :  none;
+                }
+
+                div.pagination > ul.pagination {
+                        float  : none;
+                }
+
+                div.pagination > ul.pagination > li.dead a,
+                div.pagination > ul.pagination > li.dead a:hover,
+                div.pagination > ul.pagination > li.dead a:visited,
+                div.pagination > ul.pagination > li.dead a:active {
+                        background : #F5F5F5;
+                }
+
+        }
+
+

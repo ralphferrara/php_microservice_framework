@@ -1,0 +1,37 @@
+
+<!--  |================================================================================================================================|
+|=====|  SubTemplates
+|=====|================================================================================================================================| -->
+
+
+	<!subtemplate id="doubleForward"><i class="fa fa-angle-double-right"></i></!subtemplate>
+	<!subtemplate id="singleForward"><i class="fa fa-angle-right"></i></!subtemplate>
+
+	<!subtemplate id="doubleBack"><i class="fa fa-angle-double-left"></i></!subtemplate>
+	<!subtemplate id="singleBack"><i class="fa fa-angle-left"></i></!subtemplate>
+
+	<!subtemplate id="currentPage"><li><a href="javascript:;" class="current">{{TEXT}}</a></li></!subtemplate>
+	<!subtemplate id="linkHREF"><li{{ITEMCLASS}}><a href="{{HREF}}">{{TEXT}}</a></li></!subtemplate>
+	<!subtemplate id="linkJS"><li{{ITEMCLASS}}><a href="javascript:;" onclick="{{ONCLICK}}">{{PAGETEXT}}</a></li></!subtemplate>
+
+<!--  |================================================================================================================================|
+|=====|  Main Body
+|=====|================================================================================================================================| -->
+
+	<div class="pagination{{CLASS}}"{{ID}} data-max="{{PAGEMAX}}" data-perpage="{{PERPAGE}}" data-page="{{PAGECURRENT}}">
+		<span>
+			Showing&nbsp;
+			<select class="perpage">
+				<option>10</option>
+				<option>25</option>
+				<option>50</option>
+				<option>100</option>
+			</select>&nbsp;
+			{{START}} - {{STARTPERPAGE}} of {{TOTALRESULTS}} {{TERM}}(s)
+		</span>
+		<ul class="pagination pagination-md{{HIDECLASS}}">
+			{{PAGELINKS}}
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+

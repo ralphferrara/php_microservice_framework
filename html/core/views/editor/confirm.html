@@ -1,0 +1,81 @@
+	<!subtemplate id="container-buttons">
+			{{BUTTONS}}
+	</!subtemplate>
+
+	<!subtemplate id="button">
+		<button{{CLASS}}{{ONCLICK}}>{{ICON}}{{TITLE}}</button>
+	</!subtemplate>
+
+	{{EDITOR}}
+
+	<style>
+		.confirmation.overlay {
+			position 		: fixed;
+			width 			: 100%;
+			height 			: 100%;
+			background 		: rgba(0,0,0,0.5);
+			top 			: 0;
+			left 			: 0;
+			z-index 		: 9998;
+		}
+
+		.confirmation.basket {
+			width 			: 40%;
+			border-radius 	: 10px 0 10px 10px;
+			background 		: #FFF;
+			position 		: fixed;
+			top 			: 35%;
+			left 			: 30%;
+			z-index 		: 9999;
+			background 		: #FFF;
+			padding 		: 10px;
+			border 			: 1px solid #EAEAEA;
+		}
+
+		.confirmation.basket h2.confirmation {
+			margin 			: 0;
+			padding 		: 0;
+			float 			: left;
+			letter-spacing  : -1px;
+			color 			: #333;
+		}
+
+		.confirmation.basket a.confirmation.killer {
+			float 			: right;
+			color 			: #CCC;
+			font-size 		: 16px;
+			cursor 			: pointer;
+		}
+
+		.confirmation.basket a.confirmation.killer:hover {
+			color 			: #333;
+		}
+
+		.confirmation.basket p.confirmation {
+			display 		: block;
+			padding 		: 5px 5px 15px;
+			color 			: #666;
+			text-align 		: left;
+		}
+
+		.confirmation.basket.alert p.confirmation {
+			text-align 		: center;
+			padding 		: 5px;
+		}
+
+		.confirmation.basket button.confirmation.btn.cancel,
+		.confirmation.basket button.confirmation.btn.confirm {
+			float 			: right;
+			margin-left 	: 6px;
+		}
+
+		.confirmation.basket button.confirmation.btn.other {
+			float 			: left;
+			margin-left 	: 0;
+		}
+
+	</style>
+
+
+
+

@@ -1,0 +1,17 @@
+[
+	{"id" : "dashboard", "icon":"fa-line-chart","name":"Dashboard","url":"\/staff\/","level":50,"subs":[]},
+	{"id" : "centers", "icon":"fa-building","name":"Data Centers","url":"\/staff\/centers\/","level":20,"subs":[]},
+	{"id" : "providers", "icon":"fa-product-hunt","name":"Providers","url":"\/staff\/providers\/","level":20, "subs":[]},
+	{"id" : "approve", "icon":"fa-check-square-o","name":"Approve Reviews","url":"\/staff\/centers\/reviews-approve.php","level":20,"subs":[]},
+	{"id" : "accounts", "icon":"fa-users","name":"Accounts","url":"\/staff\/accounts\/","level":20,"subs":[
+		{"id" : "accounts", "icon":"fa-users","name":"All Accounts","url":"\/staff\/accounts\/","level":20},
+		{"id" : "users", "icon":"fa-user","name":"Login Credentials","url":"\/staff\/users\/","level":20}
+	]},
+	{"icon":"fa-credit-card","name":"Payment Management","url":"javascript:;","level":20,"subs":[
+		{"id" : "payments", "type":"single","icon":"fa-credit-card","name":"All Payments","url":"\/staff\/payments\/index.php","level":50},
+		{"id" : "payments-add", "type":"single","icon":"fa-plus","name":"Add A Payment","url":"\/staff\/payments\/add.php","level":20},
+		{"id" : "promos", "type":"single","icon":"fa-ticket","name":"Promotion Codes","url":"\/staff\/payments\/promos.php","level":20}
+	]},
+	{"id" : "content", "icon":"fa-list","name":"Market Intel","url":"\/staff\/blog\/index.php","level":20,"subs":[]}
+
+]

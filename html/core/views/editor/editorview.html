@@ -1,0 +1,68 @@
+
+	<!subtemplate id="container">
+		<div class="editor editorview {{ACTIONCLASS}}">
+			<button class="actions back"><i class="fa fa-arrow-left"></i> Back</button>
+			<button class="actions insert"><i class="fa fa-plus"></i> Create New</button>
+			{{EDITOR_BUTTONS}}
+			<div class="clearfix"></div>
+			{{EDITORVIEW_ERRORS}}
+			{{EDITORVIEW_NAV}}
+			<form action="{{URI}}" method="post" class="editorview">
+					<table class="editorview">
+						{{EDITORVIEW_CAPTION}}
+						<tbody>
+							{{EDITORVIEW_FIELDS}}
+						</tbody>
+					</table>
+				{{EDITORVIEW_HIDDEN}}
+			</form>
+		</div>
+	</!subtemplate>
+
+	<!subtemplate id="container-group">
+		<ul class="list-inline nav-group size{{COUNT}}">
+			{{ITEMS}}
+		</ul>
+	</!subtemplate>
+
+	<!subtemplate id="group-link">
+		<li id="{{ID}}"{{CLASS}}><a href="javascript:;">{{NAME}}</a></li>
+	</!subtemplate>
+
+
+	<!subtemplate id="caption">
+		<caption>{{CAPTION}}</caption>
+	</!subtemplate>
+
+	<!subtemplate id="field-error">
+	<td class="error">
+		<div class="form-group error">
+			<label class="error">{{TITLE}} <span class="error"><i class="fa fa-exclamation-circle"></i> {{ERROR}}</span></label>
+			{{FIELD}}
+		</div>
+	</td>
+	</!subtemplate>
+
+	<!subtemplate id="header">
+		</table>
+		<table class="editorview spaced">
+		<tr class="ev-header"><td class="ev-header" colspan="2"><h2>{{TITLE}}</h2></td></tr>
+	</!subtemplate>
+
+	<!subtemplate id="field">
+		<td>
+			<div class="form-group">
+				<label>{{TITLE}}</label>
+				{{FIELD}}
+			</div>
+		</td>
+	</!subtemplate>
+
+	<!subtemplate id="submit">
+		<td class="submit"{{COLSPAN}}>
+			<div class="form-group">
+				<button type="submit" class="lsb btn btn-primary form-control"><i class="fa fa-save"></i> Save</button>
+				<div class="clearfix"></div>
+			</div>
+		</td>
+	</!subtemplate>

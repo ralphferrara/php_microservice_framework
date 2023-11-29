@@ -1,0 +1,691 @@
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//|| Core3 :: Copyright Syhora 2016
+//|| editor.css
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//|| REQUIRED - DO NOT CHANGE!
+//|| REQUIRED - DO NOT CHANGE!
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Paging
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        div.editor div.pagination span select.perpage {
+                display                 : none;
+        }
+
+        div.editor.perpage div.pagination span select.perpage {
+                display                 : inline-block;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Actions - Display
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        div.editor td.actions button.edit,
+        div.editor td.actions button.delete  {
+                display                 : none;
+        }
+
+        div.editor th.actions,
+        div.editor td.actions,
+        div.editor button.actions.back,
+        div.editor button.actions.insert {
+                display                 : none;
+        }
+
+        div.editor.view button.actions,
+        div.editor.insert button.actions {
+                display                 : inline-block;
+        }
+
+        div.editor.edit td.actions button.edit,
+        div.editor.delete td.actions button.delete  {
+                display                 : inline-block;
+        }
+
+        div.editor.edit th.actions,
+        div.editor.edit td.actions,
+        div.editor.delete th.actions,
+        div.editor.delete td.actions {
+                display                 : table-cell;
+                text-align              : right;
+        }
+
+
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//|| Custom
+//|| Editable
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//||
+//||  Editor
+//||
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Buttons
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        div.editor-buttons {
+                display                 : block;
+                text-align              : right;
+                padding                 : 0 0 10px 0;
+                padding                 : 0 0 10px 0;
+        }
+
+        div.editor-buttons button {
+                float                   : right;
+        }
+
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//||
+//||  ListView
+//||
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        table.listview {
+                border                  : 1px solid #CCC;
+        }
+
+        table.listview tr th:first-child,
+        table.listview tr td:first-child {
+                padding-left            : 10px;
+        }
+
+        table.listview tr th:last-child,
+        table.listview tr td:last-child {
+                padding-right           : 10px;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Actions
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        div.editor.edit td.actions button {
+                margin-right            : 5px;
+        }
+
+        div.editor.edit th.actions,
+        div.editor.edit td.actions,
+        div.editor.delete th.actions,
+        div.editor.delete td.actions {
+                text-align              : right;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Empty
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        div.editor table tr td.empty {
+                padding                 : 40px 0;
+                text-align              : center;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Paging
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        div.pagination.editor {
+                border-top              : 1px solid #EAEAEA;
+                padding-top             : 10px;
+        }
+
+        div.pagination span {
+                font-size               : 12px;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Paging
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        div.editor button.actions{
+                float                   : right;
+                padding                 : 5px 10px;
+                font-size               : 120%;
+                margin-bottom           : 10px;
+                margin-left             : 5px;
+        }
+
+        div.listview table tr th.center,
+        div.listview table tr td.center {
+                text-align              : center;
+        }
+
+        div.listview table tr th.right,
+        div.listview table tr td.right {
+                text-align              : right;
+        }
+
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//||
+//|| Search View
+//||
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        div.listsearch {
+                margin-bottom   : 20px;
+        }
+
+        div.listsearch table {
+                border          : 1px solid #EAEAEA;
+        }
+
+        div.listsearch table tr td.submit {
+                text-align      : right;
+        }
+
+        div.listsearch table tr td.submit label {
+                display         : block;
+        }
+
+        div.listsearch table tr td.submit button.lsb.btn {
+                display         : inline-block;
+                width           : 45%;
+                margin-left     : 5px;
+                max-width       : 100px;
+        }
+
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//||
+//||  EditorView
+//||
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        table.editorview {
+                border                  : 1px solid #CCC;
+        }
+
+        table.editorview.spaced {
+                margin-top              : 10px;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Header
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        table > tbody > tr.ev-header:nth-child(odd),
+        table > tbody > tr.ev-header:nth-child(even),
+        tr.ev-header {
+                background      : transparent;
+                border          : 0;
+                padding         : 0 0;
+        }
+
+        table.editorview > tbody > tr td:last-child {
+                border-right    : 1px solid #CCC;
+        }
+        tr.ev-header td {
+                background      : transparent;
+                border          : 0;
+                padding         : 0 0;
+                border-top      : 10px solid #009ccc;
+                border-bottom   : 1px solid #EAEAEA;
+        }
+
+                tr td.ev-header h2 {
+                        padding         : 20px 0 0 0;
+                }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Group Navigation
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        ul.nav-group.list-inline {
+                background      : #FFF;
+                padding         : 0;
+                margin          : 0 0 20px;
+                border          : 1px solid #EAEAEA;
+                border-bottom   : 1px solid #EAEAEA;
+                display         : table;
+                width           : 100%;
+        }
+
+
+        ul.nav-group.list-inline.size0 { display: none; }
+        ul.nav-group.list-inline.size1 { display: none; }
+        ul.nav-group.list-inline.size2 li {width : 50%;}
+        ul.nav-group.list-inline.size3 li {width : 33.33%;}
+        ul.nav-group.list-inline.size4 li {width : 25%;}
+        ul.nav-group.list-inline.size5 li {width : 20%;}
+        ul.nav-group.list-inline.size6 li {width : 16.6%;}
+
+
+        ul.nav-group.list-inline li {
+                cursor                  : pointer;
+                padding                 : 10px 20px 6px 20px;
+                border-bottom           : 4px solid #F5F5F5;
+                border-left             : 1px solid #EAEAEA;
+                color                   : #999;
+                width                   : 100%;
+                text-align              : center;
+                display                 : table-cell;
+        }
+
+        ul.nav-group.list-inline li:first-child {
+                border-left             : 0;
+        }
+
+        ul.nav-group.list-inline li.active {
+                border-bottom           : 4px solid #ef9c17;
+                color                   : #333;
+        }
+
+        ul.nav-group.list-inline li:hover {
+                border-bottom           : 4px solid #12c6f3;
+                color                   : #333;
+        }
+
+        ul.nav-group.list-inline li i.fa {
+                width                   : 26px;
+                text-align              : center;
+                display                 : inline-block;
+                opacity                 : 0.5;
+        }
+
+        ul.nav-group.list-inline li a {
+                color                   : #666;
+                font-size               : 13px;
+        }
+
+        div.editorview table tr td button.lsb.btn.form-control {
+                display         : inline-block;
+                width           : 45%;
+                max-width       : 200px;
+                font-size       : 16px;
+                margin          : 0;
+                float           : right;
+                padding         : 10px 40px;
+                height          : auto;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Validation
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        div.editorview td.error div.error {
+                text-align              : left;
+        }
+
+        div.editorview td.error label.error {
+                text-align              : left;
+                color                   : red;
+                font-weight             : bold;
+                padding-bottom          : 5px;
+        }
+
+        div.editorview td.error label.error span {
+                display                 : inline-block;
+                padding                 : 0 5px;
+                background              : rgba(255,0,0,0.2);
+                border-radius           : 4px;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Lines
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        div.editorview div.form-group {
+                margin-bottom           : 0;
+                vertical-align          : top;
+        }
+
+        div.editorview div.form-group label {
+                vertical-align          : top;
+                display                 : inline-block;
+                width                   : 30%;
+                float                   : left;
+                padding-top             : 10px;
+        }
+
+        div.editorview tr td {
+                vertical-align          : top;
+        }
+        div.editorview div.form-group > select,
+        div.editorview div.form-group > input,
+        div.editorview div.form-group span.field-wrap {
+                display                 : inline-block;
+                width                   : 60%;
+                float                   : left;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Editor Fields
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        span.field-wrap {
+                display         : block;
+                padding         : 0 0;
+                text-align      : left;
+                vertical-align  : top;
+        }
+
+        span.field-wrap input {
+                display         : inline-block;
+                width           : 50%;
+                min-width       : 140px;
+                max-width       : 240px;
+                border-radius   : 5px 0 0 5px;
+                border-right    : 0;
+                vertical-align  : top;
+        }
+
+        span.field-wrap.emptyResults {
+
+        }
+
+        span.field-wrap.email input,
+        span.field-wrap.url input {
+                width           : 50%;
+                min-width       : 240px;
+                max-width       : 440px;
+        }
+
+        span.field-wrap i {
+                display         : inline-block;
+                font-family     : 'FontAwesome';
+                background      : #EAEAEA;
+                color           : #666;
+                font-style      : normal;
+                padding         : 10px;
+                border          : 1px solid #CCC;
+                border-radius   : 0 5px 5px 0;
+                height          : 100%;
+        }
+
+        span.field-wrap b {
+                padding         : 0 0;
+                text-align      : center;
+                display         : block;
+                width           : 50%;
+                min-width       : 140px;
+                max-width       : 240px;
+        }
+
+        span.field-wrap.money:before            {
+                content       : "$";
+                color         : #666;
+                padding       : 0 4px;
+        }
+
+        span.field-wrap.date i:before           { content       : "\f073"; }
+        span.field-wrap.changepw i:before       { content       : "\f084"; }
+        span.field-wrap.datetime i:before       { content       : "\f073"; }
+        span.field-wrap.time i:before           { content       : "\f017"; }
+        span.field-wrap.number i:before         { content       : "\f198"; }
+        span.field-wrap.phone i:before          { content       : "\f095"; }
+        span.field-wrap.state i:before          { content       : "\f0ac"; }
+        span.field-wrap.float i:before          { content       : "\f198"; }
+        span.field-wrap.money i:before          { content       : "\f0d6"; }
+        span.field-wrap.url i:before            { content       : "\f0ac"; }
+        span.field-wrap.email i:before          { content       : "\f1fa"; }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Editor Fields :: Autofill
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        span.field-wrap.auto.emptyResults input {
+                background      : #EAEAEA;
+        }
+
+        span.field-wrap.auto i:before                   { content       : "\f040"; }
+        span.field-wrap.auto.emptyResults i:before      { content       : "\f00d"; }
+        span.field-wrap.auto.fetching i:before          { content       : "\f1eb"; }
+        span.field-wrap.auto.tooMany i:before           { content       : "\f040"; }
+        span.field-wrap.auto.selected i:before          { content       : "\f00c"; }
+
+        span.field-wrap.auto span.resultCount   {
+                display                 : none;
+        }
+
+        span.field-wrap.auto.tooMany span.resultCount   {
+                font-size               : 80%;
+                color                   : #666;
+                display                 : block;
+                text-align              : left;
+                padding                 : 5px;
+                position                : absolute;
+                top                     : 35px;
+                left                    : 0;
+        }
+
+        span.field-wrap.auto {
+                position                        : relative;
+        }
+
+        ul.results.auto {
+                display         : inline-block;
+                min-width       : 200px;
+                position        : absolute;
+                z-index         : 9999;
+                border          : 1px solid #EAEAEA;
+                top             : 35px;
+                left            : 0;
+                list-style      : none;
+                list-style-type : none;
+                list-style-position: inside;
+                padding         : 0;
+                width           : 50%;
+        }
+
+        ul.results.auto li {
+                border-bottom   : 1px solid #EAEAEA;
+                padding         : 5px 8px;
+                font-size       : 110%;
+                margin          : 0;
+                width           : 100%;
+        }
+
+        ul.results.auto li.selected,
+        ul.results.auto li:hover {
+                background      : #89A0B8;
+                color           : #FFF;
+                cursor          : pointer;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Editor Fields :: Tags
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        span.field-wrap.tags {
+                position        : relative;
+                padding         : 0 0 20px 0;
+        }
+
+        span.field-wrap.tags span.max,
+        span.field-wrap.tags span.none {
+                font-size               : 80%;
+                color                   : #666;
+                display                 : block;
+                text-align              : left;
+                padding                 : 5px;
+                position                : absolute;
+                top                     : 35px;
+                left                    : 0;
+        }
+
+
+        span.field-wrap.tags i:before                   { content       : "\f02b"; }
+
+        span.field-wrap.tags ul.tags {
+                display         : inline-block;
+                min-width       : 200px;
+                position        : absolute;
+                z-index         : 9999;
+                top             : 37px;
+                left            : 0;
+                list-style      : none;
+                list-style-type : none;
+                list-style-position: inside;
+                padding         : 0;
+                width           : 100%;
+        }
+
+        span.field-wrap.tags ul.tags li {
+                display         : inline-block;
+                background      : #EAEAEA;
+                padding         : 1px 5px;
+                margin-right    : 3px;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Editor Fields :: Mode
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        span.field-wrap.mode ul.mode {
+                max-width               : 100px;
+                display                 : table;
+                list-style              : none;
+                list-style-type         : none;
+                list-style-position     : inside;
+                padding                 : 0;
+                border-radius           : 5px;
+                min-width               : 100px;
+                border                  : 0;
+                background              : linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(255, 255, 255, 1) 48%, rgba(238, 238, 238, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        }
+
+        span.field-wrap.mode ul.mode li {
+                border          : 1px solid #CCC;
+                width           : 50%;
+                display         : table-cell;
+                padding         : 5px 10px;
+                text-align      : center;
+                font-weight     : bold;
+                cursor          : pointer;
+        }
+
+        span.field-wrap.mode ul.mode li:first-child {
+                border-right     : 0;
+        }
+
+
+        span.field-wrap.mode ul.mode li:last-child {
+                border-left     : 0;
+        }
+
+        span.field-wrap.mode.off ul.mode li:first-child,
+        span.field-wrap.mode.on ul.mode li:last-child {
+
+        }
+
+        span.field-wrap.mode.off ul.mode li:last-child {
+                background      : #CCC;
+                color           : #666;
+                border-radius   : 3px 0 0 3px;
+
+        }
+
+        span.field-wrap.mode.on ul.mode li:first-child {
+                border-radius   : 0 3px 3px 0;
+                background      : #258dc8;
+                background      : -moz-linear-gradient(top,  #258dc8 0%, #2dc5ef 33%, #2dc5ef 52%, #258dc8 100%); /* FF3.6-15 */
+                background      : -webkit-linear-gradient(top,  #258dc8 0%,#2dc5ef 33%,#2dc5ef 52%,#258dc8 100%); /* Chrome10-25,Safari5.1-6 */
+                background      : linear-gradient(to bottom,  #258dc8 0%,#2dc5ef 33%,#2dc5ef 52%,#258dc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+                color           : #FFF;
+        }
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Editor Fields :: Upload
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        span.field-wrap.upload input[type="file"] {
+                border  : 0px;
+        }
+
+        span.field-wrap.upload b {
+                text-align      : left;
+                background      : #EAEAEA;
+                padding         : 3px;
+                margin          : 0 0 0 5px;
+                display         : block;
+                width           : auto;
+                max-width       : none;
+                min-width       : none;
+        }
+
+        span.field-wrap.upload b img {
+                width           : 50px;
+                height          : 50px;
+                background-size : cover;
+        }
+
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//|| Editor Fields :: Multiple
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        td.editor.multiple.container label {
+                display         : block;
+                margin-bottom   : 5px;
+        }
+
+        select.multiple.select {
+                width           : 50%;
+                max-width       : 50%;
+                display         : inline-block;
+                margin          : 0 5px 10px 0;
+        }
+
+        button.multiple-add {
+                padding         : 7px 10px 6px;
+                vertical-align  : top;
+        }
+
+        table.editor.multiple {
+                padding         : 10px;
+                border          : 1px solid #66dbff;
+                border-radius   : 5px;
+                width           : 75%;
+        }
+
+        table.editor.multiple tr td {
+                background      : #e6f9ff;
+                border-top      : 1px solid #66dbff;
+                border-left     : 4px solid #009ccc;
+                padding         : 5px 5px 5px 15px;
+                vertical-align  : middle;
+        }
+
+        table.editor.multiple tr td.buttons {
+                border-left     : 0px;
+                text-align      : right;
+                padding         : 5px;
+        }
+
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//|| Change PW
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        span.field-wrap.changepw input[type="checkbox"] {
+                width           : 20px;
+                max-width       : 20px;
+                min-width       : 20px;
+                padding         : 0;
+                margin-top      : 10px;
+                border :1px solid red;
+        }
+
+        div.changepw div.changepw.reenter {
+                display         : none;
+        }
+        div.changepw.active div.changepw.reenter{
+                display         : block;
+        }
+        span.field-wrap.changepw b {
+                text-align      : left;
+                font-weight     : normal;
+                padding         : 8px 0 0 0;
+                display         : inline-block;
+
+        }
+        span.field-wrap.changepw div.changepw label {
+                text-align      : left;
+                font-weight     : normal;
+                padding         : 8px 0 0 0;
+                display         : block; !important;
+                width           : 100%;
+        }

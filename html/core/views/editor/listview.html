@@ -1,0 +1,67 @@
+
+	<!subtemplate id="head-plain">
+		<th{{TAGS}}>{{FIELDNAME}}</th>
+	</!subtemplate>
+
+	<!subtemplate id="head-sort">
+		<th{{TAGS}}><a href="?mode=view&sort={{SORTKEY}}&dir={{SORTDIR}}">{{FIELDNAME}} <i class="fa{{SORTCLASS}}"></a></th>
+	</!subtemplate>
+
+	<!subtemplate id="head-actions">
+		<th class="actions">Manage</th>
+	</!subtemplate>
+
+	<!subtemplate id="caption">
+		<caption>{{CAPTION}}</caption>
+	</!subtemplate>
+
+	<!subtemplate id="empty">
+		<tr><td class="empty" colspan="{{COLSPAN}}">There were no {{TERM}} returned.</td></tr></tr>
+	</!subtemplate>
+
+	<!subtemplate id="row">
+		<tr{{TAGS}}>{{CELLS}}</tr>
+	</!subtemplate>
+
+
+	<!subtemplate id="cell">
+		<td{{TAGS}}>{{CELLDATA}}</td>
+	</!subtemplate>
+
+	<!subtemplate id="cell-plain">
+		{{VALUE}}
+	</!subtemplate>
+
+	<!subtemplate id="cell-link">
+		<a href="{{URL}}"{{TAGS}}>{{VALUE}}</a>
+	</!subtemplate>
+
+	<!subtemplate id="cell-action">
+	<button class="action" onclick="{{ONCLICK}}" title="{{TITLE}}">{{ICON}}</button>
+	</!subtemplate>
+
+	<!subtemplate id="cell-actions">
+		<td class="actions">
+			<button class="action edit"><i class="fa fa-pencil"></i></button>
+			<button class="action delete"><i class="fa fa-trash-o"></i></button>
+		</td>
+	</!subtemplate>
+
+	<!subtemplate id="container">
+		<div class="editor listview {{ACTIONCLASS}} {{PERPAGECLASS}}">
+			<button class="actions insert"><i class="fa fa-plus"></i> Create New</button>
+			{{EDITOR_BUTTONS}}
+			<div class="clearfix"></div>
+			<table class="listview">
+				{{EDITOR_CAPTION}}
+				<thead>
+					{{EDITOR_HEADERS}}
+				</thead>
+				<tbody>
+					{{EDITOR_RESULTS}}
+				</tbody>
+			</table>
+			{{EDITOR_PAGING}}
+		</div>
+		{{EDITOR_MESSAGES}}
+	</!subtemplate>

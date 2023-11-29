@@ -1,0 +1,20 @@
+
+	<!subtemplate id="container">
+		<tr>
+			<td colspan="2" class="editor multiple container" data-name="{{NAME}}" data-check="MYCHECK">
+				<label>{{TITLE}}</label>
+				{{SELECT}}
+				<table class="editor multiple">
+					{{ITEMS}}
+				</table>
+			</td>
+		</tr>
+	</!subtemplate>
+
+
+	<!subtemplate id="multiple">
+	<tr>
+		<td>{{SHOW}}</td>
+		<td class="buttons"><button type="button" class="action multiple-delete" data-id="{{ID}}" data-name="{{NAME}}" data-check="{{CHECK}}" data-value="{{VALUE}}"><i class="fa fa-trash"></i></button></td>
+	</tr>
+	</!subtemplate>

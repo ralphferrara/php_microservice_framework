@@ -1,0 +1,414 @@
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//|| Core3 :: Copyright Syhora 2016
+//|| staff.css
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        /* ||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-||
+        || Header
+        ||-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-|| */
+
+        div.header.navbar.navbar-default.navbar-fixed-top {
+                border-bottom 	: 1px solid #CCC;
+        }
+
+        div.header ul.nav > li > a > span {
+                font-size           : 12px;
+        }
+
+        div.header ul.nav > li > ul.dropdown-menu {
+                border              : 1px solid #EAEAEA;
+                padding             : 0;
+                border-radius       : 0;
+        }
+
+        div.header ul.nav > li > ul.dropdown-menu li {
+                font-size           : 12px;
+                border-radius       : 0;
+        }
+
+        div.header ul.nav > li > ul.dropdown-menu li a {
+                padding             : 10px 15px;
+        }
+
+        /* ||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-||
+        || Content Area
+        ||-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-|| */
+
+        div.row.staff {
+                margin-top 		: 50px;
+        }
+
+        /* ||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-||
+        || Sidebar
+        ||-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-|| */
+
+        div#side {
+                background 		: #494e54;
+                padding 		: 0;
+        }
+
+        div#side ul {
+                list-style 			: none;
+                font-family  		: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size 			: 13px;
+        }
+
+        div#side ul li {
+                cursor 				: pointer;
+        }
+
+        div#side ul li a {
+                padding  		: 10px 20px 6px;
+                line-height  	: 20px;
+                color  			: #a8acb1;
+                display 		: block;
+                border-bottom 	: 1px dashed #575d64;
+                cursor 			: pointer;
+        }
+
+        div#side ul li a:active,
+        div#side ul li a:hover {
+                background 		: #1a2229;
+        }
+
+        div#side ul li a label {
+                font-weight 	: normal;
+        }
+
+        div#side ul li i.fa {
+                margin-right 	: 4px;
+                width 			: 24px;
+                text-align 		: center;
+        }
+
+        div#side ul li.has-sub ul {
+                padding  		: 0 0 0 0;
+                margin  		: 0;
+                position 		: relative;
+                display  		: none;
+                list-style-type : none;
+        }
+
+        div#side ul li.has-sub.expand>a{
+                color 			: #FFF;
+                background 		: #5e7385;
+        }
+
+        div#side ul li.has-sub.expand ul {
+                display  		: block;
+                background 		: #1a2229;
+        }
+
+        div#side ul li.has-sub ul li a {
+                padding  		: 10px 10px 6px 30px;
+                font-size 		: 11px;
+                border-bottom 	: 1px dashed #29353f;
+        }
+
+        div#side ul li.no-sub a.active,
+        div#side ul li.has-sub.expand ul li a.active {
+                color 			: #FFF;
+                font-weight 	      : 700;
+                position 		: relative;
+        }
+
+        div#side ul li.no-sub a.active:after,
+        div#side ul li.has-sub.expand ul li a.active:after {
+                font-family 	: "FontAwesome";
+                content 		: "\f0da";
+                position 		: absolute;
+                margin 			: 12px 10px 0 0;
+                right 			: 0;
+                top 			: 0;
+        }
+
+        /* ||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-||
+        || Profile
+        ||-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-|| */
+
+        div#side ul li.nav-profile {
+                color 			: #FFF;
+                background 		: #1a2229;
+                padding 		: 20px;
+        }
+
+        div#side ul li.nav-profile div.image {
+                display 		: inline-block;
+                width 			: 20%;
+                float 			: left;
+        }
+
+        div#side ul li.nav-profile div.image img {
+                width 			: 100%;
+                border-radius 	: 10px;
+        }
+
+        div#side ul li.nav-profile div.info {
+                display 		: inline-block;
+                width 			: 80%;
+                padding 		: 0 0 0 5px;
+        }
+
+        div#side ul li.nav-profile a {
+                padding 		: 0;
+        }
+
+        div#side ul li.nav-profile div.info small {
+                display 		: block;
+                color 			: #EAEAEA;
+        }
+
+        /* ||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-||
+        || Nav Header
+        ||-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-|| */
+
+        div#side ul li.nav-header {
+                margin  		: 0;
+                padding 		: 10px 20px;
+                line-height 	: 20px;
+                font-size 		: 15px;
+                color 			: #CCC;
+                background 		: #2b3742;
+        }
+
+        /* ||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-||
+        || Shrunk Side
+        ||-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-|| */
+
+        div#side.shrunk ul li a {
+                font-size 		: 18px;
+                padding  		: 8px 20px 8px;
+                display 		: block;
+                text-align 		: center;
+                cursor 			: pointer;
+                width 			: 100%;
+        }
+
+        div#side.shrunk ul li.nav-profile div.info,
+        div#side.shrunk ul li label,
+        div#side.shrunk ul li.nav-header {
+                display 		: none;
+        }
+
+        div#side.shrunk ul li.nav-profile {
+                padding 		: 10px;
+        }
+
+        div#side.shrunk ul li.nav-profile div.image {
+                width 			: 100%;
+                text-align 		: center;
+        }
+
+        div#side.shrunk ul li.nav-profile div.image img {
+                width 			: 50%;
+                margin 			: 0 auto;
+        }
+
+        /* ||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-||
+        || Minify
+        ||-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-|| */
+
+        div#side ul li a.sidebar-minify-btn {
+                float 			: right;
+                background 		: #1a2229;
+                color 			: #FFF;
+                border-radius 	: 10px 0 0 10px;
+                font-size 		: 16px;
+                padding 		: 8px 15px 8px 20px;
+                margin 			: 20px 0 0 0;
+                border-bottom       : 0;
+        }
+
+        div#side ul li a.sidebar-maximize-btn {
+                display 		: none;
+                float 			: left;
+                border-radius 	: 0 10px 10px 0;
+        }
+
+        div#side.shrunk ul li a.sidebar-maximize-btn {
+                display 		: inline-block;
+                width               : auto;
+                margin-top          : 20px;
+                border-bottom       : 0;
+                background          : #1a2229;
+        }
+
+        div#side.shrunk ul li a.sidebar-minify-btn {
+                display 		: none;
+        }
+
+        /* ||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-||
+        || Content Area
+        ||-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-|| */
+
+        div#content {
+                background 		: #d9e0e7;
+                overflow-y          : scroll;
+                height              : 100%;
+        }
+
+        div.content div.header {
+                border-bottom 	: 1px solid #CCC;
+        }
+
+        div.content div.header h1 {
+                letter-spacing 	: -1px;
+        }
+
+        div.content div.header ol.breadcrumb {
+                margin 			: 20px 0 0 0;
+        }
+
+        div.content div.header ol.breadcrumb a {
+                color 			: #494e54;
+        }
+
+        div.content div.subcontent {
+                padding-top 	      : 20px;
+        }
+
+        /* ||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-||
+        || Widgets
+        ||-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-|| */
+
+        .bg-white { background: #ffffff !important; }
+        .bg-silver-lighter { background: #f4f6f7 !important; }
+        .bg-silver { background: #f0f3f4 !important; }
+        .bg-silver-darker { background: #b4b6b7 !important; }
+
+        .bg-black { background: #2d353c !important; }
+        .bg-black-darker { background: #242a30 !important; }
+        .bg-black-lighter { background: #575d63 !important; }
+
+        .bg-grey { background: #b6c2c9 !important; }
+        .bg-grey-darker { background: #929ba1 !important; }
+        .bg-grey-lighter { background: #c5ced4 !important; }
+
+        .bg-red { background: #ff5b57 !important; }
+        .bg-red-darker { background: #cc4946 !important; }
+        .bg-red-lighter { background: #ff7c79 !important; }
+
+        .bg-orange { background: #f59c1a !important; }
+        .bg-orange-darker { background: #c47d15 !important; }
+        .bg-orange-lighter { background: #f7b048 !important; }
+
+        .bg-yellow { background: #e3fa3e !important; }
+        .bg-yellow-darker { background: #b6c832 !important; }
+        .bg-yellow-lighter { background: #e9fb65 !important; }
+
+        .bg-green { background: #00acac !important; }
+        .bg-green-darker { background: #008a8a !important; }
+        .bg-green-lighter { background: #33bdbd !important; }
+
+        .bg-blue { background: #348fe2 !important; }
+        .bg-blue-darker { background: #2a72b5 !important; }
+        .bg-blue-lighter { background: #5da5e8 !important; }
+
+        .bg-aqua { background: #49b6d6 !important; }
+        .bg-aqua-darker { background: #3a92ab !important; }
+        .bg-aqua-lighter { background: #6dc5de !important; }
+
+        .bg-purple { background: #727cb6 !important; }
+        .bg-purple-darker { background: #5b6392 !important; }
+        .bg-purple-lighter { background: #8e96c5 !important; }
+
+        .widget {
+                border-radius: 3px;
+                margin-bottom: 20px;
+                color: #fff;
+                padding: 15px;
+                overflow: hidden;
+        }
+        .widget.widget-stats {
+                position: relative;
+        }
+        .widget-stats .stats-info h4 {
+                font-size: 12px;
+                margin: 5px 0;
+                color: #fff;
+        }
+        .widget-stats .stats-icon {
+                font-size: 42px;
+                height: 56px;
+                width: 56px;
+                text-align: center;
+                line-height: 56px;
+                margin-left: 15px;
+                color: #fff;
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                opacity: 0.2;
+                filter: alpha(opacity=20);
+        }
+        .widget-stats .stats-info p {
+                font-size: 24px;
+                font-weight: 300;
+                margin-bottom: 0;
+        }
+        .widget-stats .stats-link a {
+                display: block;
+                margin: 15px -15px -15px;
+                padding: 7px 15px;
+                background: url(../img/transparent/black-0.4.png);
+                background: rgba(0,0,0,0.4);
+                text-align: right;
+                color: #ddd;
+                font-weight: 300;
+                text-decoration: none;
+        }
+        .widget-stats .stats-link a:hover,
+        .widget-stats .stats-link a:focus {
+                background: url(../img/transparent/black-0.6.png);
+                background: rgba(0,0,0,0.6);
+                color: #fff;
+        }
+        .widget-stats .stats-icon.stats-icon-lg {
+                font-size: 52px;
+                top: 12px;
+                right: 21px;
+        }
+        .widget-stats .stats-title {
+                position: relative;
+                line-height: 1.1;
+                font-size: 12px;
+                margin: 2px 0 7px;
+        }
+        .widget-stats .stats-title,
+        .widget-stats .stats-desc {
+                color: #fff;
+                color: rgba(255,255,255,0.6);
+        }
+        .widget-stats .stats-desc {
+                font-weight: 300;
+                margin-bottom: 0;
+        }
+        .widget-stats .stats-number {
+                font-size: 24px;
+                font-weight: 300;
+                margin-bottom: 10px;
+        }
+        .widget-stats .stats-progress {
+                background: url('../img/transparent/black-0.2.png');
+                background: rgba(0,0,0,0.2);
+                height: 2px;
+                margin: 0 -15px 12px;
+        }
+        .widget-stats .stats-progress .progress-bar {
+                background: #fff;
+        }
+
+        .widget span.compare {
+                display         : block;
+                font-size       : 90%;
+                opacity         : 0.6;
+        }
+
+        .widget span.compare small {
+                opacity         : 1;
+        }
+
+        .widget span small {
+                font-size       : 11px;
+                opacity         : 0.6;
+        }

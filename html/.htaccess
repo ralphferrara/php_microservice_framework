@@ -1,0 +1,124 @@
+
+
+#=====================================================================================================================||
+#====| Error Page
+#=====================================================================================================================||
+
+	ErrorDocument 404 /core/views/errors/404.html
+	AddDefaultCharset UTF-8
+
+#=====================================================================================================================||
+#====| Font Expiration
+#=====================================================================================================================||
+
+	AddType application/vnd.ms-fontobject .eot
+	AddType application/x-font-ttf .ttf
+	AddType application/x-font-opentype .otf
+	AddType application/x-font-woff .woff
+	AddType image/svg+xml .svg
+
+	AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-opentype image/svg+xml
+
+	ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+	ExpiresByType application/x-font-ttf "access plus 1 year"
+	ExpiresByType application/x-font-opentype "access plus 1 year"
+	ExpiresByType application/x-font-woff "access plus 1 year"
+	ExpiresByType image/svg+xml "access plus 1 year"
+
+#=====================================================================================================================||
+#====| Rewrite Engine
+#=====================================================================================================================||
+
+	Options +FollowSymLinks
+	Options -Indexes
+	RewriteEngine On
+
+#=====================================================================================================================||
+#====| Micro Test
+#=====================================================================================================================||
+
+	RewriteRule ^micro-test$ /core/controllers/micro-test.php [L,QSA]
+	RewriteRule ^micro-send$ /core/controllers/micro-send.php [L,QSA]
+
+#=====================================================================================================================||
+#====| Health Check
+#=====================================================================================================================||
+
+	RewriteRule ^health-check$ /core/controllers/health-check.php [L,QSA]
+
+#=====================================================================================================================||
+#====| xPile
+#=====================================================================================================================||
+
+	RewriteRule ^css/(.*)$ /program/cache/css/$1 [L]
+	RewriteRule ^js/(.*)$ /program/cache/js/$1 [L]
+
+#=====================================================================================================================||
+#====| Captcha
+#=====================================================================================================================||
+
+	RewriteRule ^captcha/(.*)/(.*)/(.*)/(.*)$ /core/calls/captcha/captcha.php?area=$1&width=$2&height=$3 [L,QSA]
+	RewriteRule ^captcha/(.*)/(.*)/(.*)/$ /core/calls/captcha/captcha.php?area=$1&width=$2&height=$3 [L,QSA]
+	RewriteRule ^captcha/(.*)/(.*)/(.*)$ /core/calls/captcha/captcha.php?area=$1&width=$2 [L,QSA]
+	RewriteRule ^captcha/(.*)/(.*)/$ /core/calls/captcha/captcha.php?area=$1&width=$2 [L,QSA]
+	RewriteRule ^captcha/(.*)/(.*)$ /core/calls/captcha/captcha.php?area=$1 [L,QSA]
+	RewriteRule ^captcha/(.*)/$ /core/calls/captcha/captcha.php?area=$1 [L,QSA]
+	RewriteRule ^captcha/(.*)$ /core/calls/captcha/captcha.php [L,QSA]
+
+#=====================================================================================================================||
+#====| Assets
+#=====================================================================================================================||
+
+	RewriteRule ^assets/core/(.*)$ /core/assets/$1 [L,QSA]
+	RewriteRule ^assets/program/(.*)$ /program/assets/$1 [L,QSA]
+
+#=====================================================================================================================||
+#====| Calls
+#=====================================================================================================================||
+
+	RewriteRule ^calls/core/(.*)$ /core/calls/$1 [L,QSA]
+	RewriteRule ^calls/program/(.*)$ /program/calls/$1 [L,QSA]
+
+#=====================================================================================================================||
+#====| Staff
+#=====================================================================================================================||
+
+	RewriteRule ^staff/$ /program/controllers/staff/index.php [L,QSA]
+	RewriteRule ^staff/(.*)/$ /program/controllers/staff/$1/index.php [L,QSA]
+	RewriteRule ^staff/(.*)$ /program/controllers/staff/$1 [L,QSA]
+#=====================================================================================================================||
+#====| Last Pages
+#=====================================================================================================================||
+
+	RewriteRule ^/index.php$ /program/controllers/public/index.php [L,QSA]
+	RewriteRule ^(.*)/$ /program/controllers/public/$1.php [L,QSA]
+	RewriteRule ^$ /program/controllers/public/index.php [L,QSA]
+
+#=====================================================================================================================||
+#====| Missing Image
+#=====================================================================================================================||
+
+	RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+	RewriteRule \.(gif|jpe?g|png|bmp) /images/missing1.png [NC,L]
+
+#=====================================================================================================================||
+#====| GZIP
+#=====================================================================================================================||
+
+	SetOutputFilter DEFLATE
+	AddOutputFilterByType DEFLATE application/x-httpd-php text/html text/xml text/plain text/css text/javascript application/javascript application/x-javascript image/jpeg image/jpg image/png image/gif font/ttf font/eot font/otf
+	Header append Vary User-Agent
+	BrowserMatch ^Mozilla/4 gzip-only-text/html
+	BrowserMatch ^Mozilla/4\.0[678] no-gzip
+	BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+	SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|pdf|swf|ico|zip|ttf|eot|svg)$ no-gzip
+
+#=====================================================================================================================||
+#====| Videos
+#=====================================================================================================================||
+
+	AddType video/ogg .ogv
+	AddType audio/ogg .oga
+	AddType video/mp4 .mp4
+
+

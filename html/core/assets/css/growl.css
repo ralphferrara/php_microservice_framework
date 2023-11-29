@@ -1,0 +1,83 @@
+/*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+//|| Core3 :: Copyright Syhora 2016
+//|| Growl.css
+//||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        /*||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||
+        //|| Growl
+        //||=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-||*/
+
+        .growl {
+                font-family             : Tahoma, Arial, Helvetica, sans-serif;
+                width                   : 300px;
+                max-width               : 300px;
+                min-height              : 40px;
+                display                 : none;
+                position                : fixed;
+                right                   : 10px;
+                top                     : 20px;
+                background-color        : rgba(0, 0, 0, 0.8);
+                padding                 : 10px;
+                border-radius           : 0;
+                z-index                 : 99998;
+        }
+
+                .growl.alert-success    {
+                        background-color        : rgba(0, 255, 0, 0.7);
+                        border                  : 0;
+                }
+                        .growl.alert-success b { color : #653518; }
+                        .growl.alert-success p { color : #653518; }
+
+                .growl.alert-danger     {
+                        background-color        : rgba(255, 0, 0, 0.7);
+                        border                  : 0;
+                }
+                        .growl.alert-danger b { color : #FFF; }
+                        .growl.alert-danger p { color : #FFF; }
+
+                .growl.alert-info       {
+                        background-color        : rgba(0, 0, 0, 0.9);
+                        border                  : 0;
+                }
+
+                .growl.alert-warning    {
+                        background-color        : rgba(0, 0, 255, 0.7);
+                        border                  : 0;
+                }
+                        .growl.alert-warning p { color : #FFF; }
+
+        .growl b {
+                font-size               : 12px;
+                font-weight             : normal;
+                color                   : #FFF;
+                line-height             : 1.2em;
+                display                 : block;
+                padding-bottom          : 3px;
+        }
+
+        .growl p {
+                float                   : left;
+                font-size               : 11px;
+                color                   : #CCC;
+                width                   : 86%;
+                line-height             : 1.5em;
+        }
+
+        .growl a.close {
+                float                   : right;
+                color                   : #FFF;
+                background-color        : rgba(255, 0, 0, 1);
+                margin                  : -10px 0 0 0;
+                font-size               : 11px;
+                font-weight             : normal;
+                padding                 : 8px 5px 10px;
+                z-index                 : 99999;
+                width                   : 8%;
+                text-align              : center;
+                opacity                 : 1;
+        }
+
+        .growl a.close:hover {
+                background              : #000;
+        }
